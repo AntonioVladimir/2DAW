@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var frase = prompt('Introduce una frase: ');
+        var contadorVocales = frase.match(/[aeiou]/gi).length;
+        document.write('Hay: ' + contadorVocales + ' vocales.');
+
+        var negrita = frase.replace(/[aeiou]/gi, function(negrita){return negrita.bold()});
+        document.write('<br>'+ negrita);
+
+        var colores = frase.replace(/[aeiou]/gi, function(rojo){return rojo.fontcolor('red')});
+        document.write('<br>'+ colores);
+        /*var cadena = Array.from(frase);
+        function negrita(char)
+        {
+            let diff;
+            if(/[A-Z]/.test (char))
+            {
+                diff = "A".codePointAt(0) - "A".codePointAt(0);
+            }
+            else
+            {
+                diff = "𝗮".codePointAt (0) - "a".codePointAt (0);
+            }
+            return String.fromCodePoint(char.codePointAt (0) + diff);
+        }
+        let fraseConNegritas = frase.replace(/[aeiou]/gi, negrita);
+        document.write('<br>'+ frase);
+        document.write('<br>'+ fraseConNegritas);
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
