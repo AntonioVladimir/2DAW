@@ -6,14 +6,45 @@
     <title>Document</title>
     <script>
         var frase = prompt('Introduce una frase: ');
+
+        const vocales = ['a', 'e', 'i', 'o', 'u'];
+    
         var contadorVocales = frase.match(/[aeiou]/gi).length;
         document.write('Hay: ' + contadorVocales + ' vocales.');
 
         var negrita = frase.replace(/[aeiou]/gi, function(negrita){return negrita.bold()});
         document.write('<br>'+ negrita);
 
-        var colores = frase.replace(/[aeiou]/gi, function(rojo){return rojo.fontcolor('red')});
-        document.write('<br>'+ colores);
+        var unicoColor = frase.replace(/[aeiou]/gi, function(letraColor){return letraColor.fontcolor('red')});
+        document.write('<br>'+ unicoColor);
+
+        var coloresDistintos = function coloresVocales(text) {
+
+            for (let i = 0; i < text.length; i += 1) {
+                const char = text.charAt(i);
+                if (char === vocales[0] || char === vocales[1] || char === vocales[2] || char === vocales[3] || char === vocales[4]) {
+                    if(char === vocales[0]){
+                        document.write(char.fontcolor('red'));
+                    } else if(char === vocales[1]){
+                        document.write(char.fontcolor('yellow'));
+                    } else if(char === vocales[2]){
+                        document.write(char.fontcolor('blue'));
+                    } else if(char === vocales[3]){
+                        document.write(char.fontcolor('orange'));
+                    } else if(char === vocales[4]){
+                        document.write(char.fontcolor('purple'));
+                    }
+                    } else {
+                        document.write(char);
+                    }
+            }
+
+        }
+        document.write('<br>');
+        coloresDistintos(frase);
+
+
+
         /*var cadena = Array.from(frase);
         function negrita(char)
         {
@@ -32,6 +63,7 @@
         document.write('<br>'+ frase);
         document.write('<br>'+ fraseConNegritas);
         */
+        
     </script>
 </head>
 <body>
