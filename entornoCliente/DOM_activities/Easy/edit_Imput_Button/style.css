@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.title {
+    font-family   : 'Roboto Condensed', sans-serif;
+    text-align    : center;
+    line-height   : 40px;
+    color         : rgb(0, 0, 0);
+    font-weight   : 200;
+    text-transform: uppercase;
+}
+
+input {
+    margin-top   : 0;
+    margin-bottom: 0;
+    height       : 100%;
+    width        : 25em;
+    color        : black;
+    display      : inline;
+    font-family  : 'Roboto Condensed', sans-serif;
+}
+
+.div-padre {
+    overflow       : hidden;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    min-height     : 40vh;
+}
+
+input {
+    padding: 2%;
+    margin: 2%;
+    color:#fff;
+    outline         : none;
+    background-color: #191919;
+    border          : 0;
+    font-size: 1em;
+}
+
+#nombre{
+    color:#000;
+    outline         : none;
+    background-color: #fff;
+    border          : 0.5px solid;
+}

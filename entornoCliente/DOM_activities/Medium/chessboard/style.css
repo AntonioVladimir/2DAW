@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.title {
+    font-family   : 'Roboto Condensed', sans-serif;
+    text-align    : center;
+    line-height   : 40px;
+    color         : rgb(0, 0, 0);
+    font-weight   : 200;
+    text-transform: uppercase;
+}
+
+.div-padre{
+    overflow       : hidden;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    min-height     : 40vh;
+}
+
+
+#board, #board > div {
+    display:table-row;
+    margin:0;
+    padding:0;
+    
+}
+#board .black, #board .white, #board .number {
+    display: table-cell;
+    width:40px;
+    height:40px;
+    border:1px #191919 solid;
+}
+#board .number {
+    line-height:40px;
+    text-align:center;
+    border:1px transparent solid;
+}
+#board .black {
+    background:#191919;
+}
+#board .white {
+    background:#fff;
+}
