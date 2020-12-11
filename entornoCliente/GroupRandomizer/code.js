@@ -19,11 +19,11 @@ function Grupos() {
     let gruposFinales = new Array();
 
     for (let i = 0; i < grupos; i++) {
-        // assign shuffled elements
+        // Asignamos grupos aletorizados
         let grpArr = "";
         for (j = 0; j < personasGrupo; j++) {
             grpArr += nuevoArray[0] + ",";
-            nuevoArray.shift(); // removes first element from array    
+            nuevoArray.shift(); //Removemos el primer elemento del array  
         }
 
         grpArr = grpArr.substring(0, grpArr.length - 1);
@@ -50,10 +50,6 @@ function Grupos() {
 
 }
 
-/**
-* Randomize array element order in-place.
-* Using Durstenfeld shuffle algorithm.
-*/
 function Mezclador(array) {
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
