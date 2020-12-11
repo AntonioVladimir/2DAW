@@ -8,6 +8,7 @@
 }
 
 .title {
+	padding-top: 66px;
 	font-family   : 'Roboto Condensed', sans-serif;
 	text-align    : center;
 	line-height   : 40px;
@@ -22,8 +23,61 @@ table{
 	padding: 20px;
 }
 
+#grupos{
+	text-align: center;
+	font-size: medium;
+	padding: 10px;
+	outline:none;
+	border: 0;
+	border: 1px solid #011627;
+}
+#grupos::placeholder{
+	outline:none;
+	border: 0;
+	text-align: center;
+
+}
+#grupos:hover{
+	border: 1px solid #011627;
+	box-shadow: 0 0 3px 2px #011627;
+}
+#personasDelGrupo{
+	text-align: center;
+	font-size: medium;
+	padding: 10px;
+	outline:none;
+	border: 0;
+	border: 1px solid #011627;
+}
+#personasDelGrupo::placeholder{
+	outline:none;
+	border: 0;
+	text-align: center;
+}
+#personasDelGrupo:hover{
+	border: 1px solid #011627;
+	box-shadow: 0 0 3px 2px #011627;
+}
+
+
+.boton{
+	border: 2px #fff;
+	color:white;
+	background: #011627;
+	margin: 5px;
+	padding: 5px;
+	outline:none;
+	box-shadow: 0 0 3px 2px #011627;
+}
+.boton:hover{
+	transition: 0.7s;
+	background-color: #fff;
+	color : #191919;
+	border: 1px solid #011627;
+}
+
 .posicion {
-	padding-top: 10%;
+	padding-top: 5%;
 	display   : table;
 	height    : 100%;
 	margin    : 0 auto;
@@ -31,7 +85,7 @@ table{
 }
 .tablas{
 	padding: 20px;
-	margin:  10px 10px;
+	margin:  20px 10px;
 	border: 1px solid;
 }
 .el-contenedor {
@@ -40,6 +94,3 @@ table{
 	text-align: center;
 	
 }
-
-
-

@@ -9,7 +9,7 @@ function Grupos() {
     
     let innerText = "<br><h4 class='todos-nombres'> TODOS LOS NOMBRES </h4><br>";
     for (let i = 0; i < nuevoArray.length; i++) {
-        innerText += nuevoArray[i] + " : ";
+        innerText += nuevoArray[i] + ", " ;
     }
     innerText += "<br>" + "<br>" + "\n";
 
@@ -59,3 +59,5 @@ function Mezclador(array) {
     }
     return array;
 }
+
+function Escluidos(){}
