@@ -4,12 +4,13 @@ function Grupos() {
     let grupos = document.getElementById("grupos").value;
     let personasGrupo = document.getElementById("personasDelGrupo").value;
     
-    let innerText = "<br><h4 class='todos-nombres'> TODOS LOS NOMBRES </h4><br>";
-    for (let i = 0; i < nuevoArray.length; i++) {
-        innerText += nuevoArray[i] + ",";
-    }
-    innerText += "<br>" + "<br>" + "\n";
 
+    /*Transformamos lo de arriba y indexamos el array con join(), con ello evitamos la coma basura. */
+    let innerText = `
+        <br><h4 class="todos-nombres">TODOS LOS NOMBRES</h4><br>
+            ${nuevoArray.join(', ')}
+        <br><br>
+    `;
 
     nuevoArray = Mezclador(nuevoArray);
     
