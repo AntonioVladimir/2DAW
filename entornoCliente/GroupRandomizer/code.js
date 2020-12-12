@@ -1,6 +1,3 @@
-let nuevoArray = new Array();
-
-
 function Grupos() {
     let nuevoArray = prompt("Nombres: ").split(",");
 
@@ -9,36 +6,36 @@ function Grupos() {
     
     let innerText = "<br><h4 class='todos-nombres'> TODOS LOS NOMBRES </h4><br>";
     for (let i = 0; i < nuevoArray.length; i++) {
-        innerText += nuevoArray[i] + ", " ;
+        innerText += nuevoArray[i] + ",";
     }
     innerText += "<br>" + "<br>" + "\n";
 
 
     nuevoArray = Mezclador(nuevoArray);
-
+    
     let gruposFinales = new Array();
 
     for (let i = 0; i < grupos; i++) {
         // Asignamos grupos aletorizados
-        let grpArr = "";
+        let arrayGrupos = "";
         for (j = 0; j < personasGrupo; j++) {
-            grpArr += nuevoArray[0] + ",";
+            arrayGrupos += nuevoArray[0] + ",";
             nuevoArray.shift(); //Removemos el primer elemento del array  
         }
 
-        grpArr = grpArr.substring(0, grpArr.length - 1);
-        gruposFinales[i] = grpArr;
+        arrayGrupos = arrayGrupos.substring(0, arrayGrupos.length - 1);
+        gruposFinales[i] = arrayGrupos;
     }
-    let innerText2 = "";
+    //let innerText2 = "";
     innerText2 = "<br><br>";
     innerText += "<h5 class='todos-nombres'> GRUPOS </h5><table><tr  >\n";
     for (let i = 0; i < grupos; i++) {
         // print grupos
         let j = i + 1;
-        let grpArr = gruposFinales[i].split(",");
+        let arrayGrupos = gruposFinales[i].split(",");
         innerText += "<td class='tablas'>Grupo " + j + "<br>"+"<br>";
-        for (let k = 0; k < grpArr.length; k++) {
-            innerText += grpArr[k] + "<br>";
+        for (let k = 0; k < arrayGrupos.length; k++) {
+            innerText += arrayGrupos[k] + "<br>";
         }
 
         innerText += "</td>\n";
