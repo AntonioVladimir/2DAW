@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.title {
+
+    padding-top   : 20px;
+    padding-bottom: 20px;
+    font-family   : 'Roboto Condensed', sans-serif;
+    text-align    : center;
+    line-height   : 40px;
+    color         : rgb(0, 0, 0);
+    font-weight   : 200;
+    text-transform: uppercase;
+}
+
+.tabla {
+
+    font-family     : 'Roboto Condensed', sans-serif;
+    background-color: #fff;
+    color           : white;
+    box-shadow      : 0 0 20px 3px black;
+
+}
+
+.tabla h1 {
+    padding-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color      : black;
+    text-align : center;
+
+}
+
+#impostores {
+
+    display: flex;
+    margin : 40px;
+}
+
+#rojo 
+{
+    color:white;
+    background:#C51211;
+}
+
+#azul 
+{
+    color:white;
+    background:#132ED1;
+}
+
+#verde 
+{
+    background:#13802C;
+    color:white;
+}
+
+#amarillo 
+{
+    background:#b9b947;
+}
+
+#morado 
+{
+    color:white;
+    background: #6C2FBC;
+}
+
+#turquesa 
+{
+    background: #39FEDD;
+}
+
+#rosa 
+{
+    background:#EC54BB;
+}
+
+#negro 
+{
+    background:#3E474E;
+    color:white;
+}
+
+#blanco 
+{   
+    color:black;
+    background:#D6DFF1;
+}
+
+.impostor {
+    color           : black;
+    width           : 150px;
+    height          : 50px;
+    display         : flex;
+    background-color: white;
+    padding         : 10px;
+    margin          : 10px;
+    box-shadow      : 0 0 4px 3px black;
+}
+
+.impostor.votado {
+    background-color: rgb(0, 0, 0);
+    position        : relative;
+    text-align      : center;
+    opacity         : 0.7;
+    color           : #fff;
+}
+
+.impostor.votado::after {
+    text-transform: uppercase;
+    font-size  : 13px;
+    position   : absolute;
+    content    : "Votado";
+    font-weight: bold;
+    top        : 5px;
+    right      : 5px;
+    text-align : center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color      : rgb(139, 0, 0);
+}
+
+p {
+    margin-right  : 40px;
+    color         : black;
+    padding-bottom: 30px;
+}
+
+.tiempoVotacion {
+    text-align: right;
+}
