@@ -17,7 +17,7 @@ let jugadores = [
 ];
 
 jugadores.forEach(function(jugador) {
-    console.log("Nombre: " + jugador.nombre +" |"+ " Edad: " + jugador.id);
+    console.log("Nombre: " + jugador.nombre +" |"+ " ID: " + jugador.id);
     let div = document.createElement("div");
     
     div.textContent = jugador.nombre;
